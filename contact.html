@@ -12,9 +12,12 @@
     <link rel="stylesheet" href="style.css">
 
 </head>
+<style>
+
+</style>
+
 <body>
 
-    <div class="container">
         <!-- navbar starts -->
         <header>
             <div class="header-container" id="header">
@@ -79,142 +82,7 @@
         </div>
         <!-- singin page ends -->
         <!-- hero sections start -->
-        <div class="hero-section" id="home">
-            <div class="left-hero animate__animated animate__backInLeft ">
-                <span>
-                    enjoy our
-                </span>
-                <span>delicious meal</span>
-                <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione est facere iste laboriosam totam
-                    quas blanditiis tempora, dolores nemo? Quibusdam nam aspernatur perspiciatis suscipit rem qui,
-                    blanditiis placeat possimus! Sint!
-                </p>
-                <button>book a table</button>
-            </div>
-            <div class="right-hero animate__animated animate__backInRight">
-                <img src="Images/marinated-chicken-platter.png" alt="heropng">
-            </div>
-        </div>
-        <!-- hero section ends -->
-    </div>
-    <!-- display-info starts -->
-    <span class="service">-------services------</span>
-    <div class="info-cards" id="service">
 
-        <div class="card animate__animated animate__backInRight ">
-            <i class="fa-solid fa-plate-wheat"></i>
-            <small>master chefs</small>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga, modi.</p>
-        </div>
-        <div class="card animate__animated animate__backInRight animate__delay-1s">
-            <i class="fa-solid fa-spoon"></i>
-            <small>quality food</small>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga, modi.</p>
-        </div>
-        <div class="card animate__animated animate__backInRight animate__delay-2s">
-            <i class="fa-solid fa-cart-shopping"></i>
-            <small>online order</small>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga, modi.</p>
-        </div>
-        <div class="card animate__animated animate__backInRight animate__delay-3s">
-            <i class="fa-solid fa-headset"></i>
-            <small>24/7 services</small>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga, modi.</p>
-        </div>
-    </div>
-    <!-- display-info ends -->
-    <!-- about us starts -->
-    <div class="about-container" id="about">
-        <div class="left-about" id="leftabout">
-            <img src="Images/pool.webp">
-            <img src="Images/room.jpg" class="animate__animated animate__zoomIn ">
-            <img src="Images/room1.avif" class="animate__animated animate__zoomIn ">
-
-            <img src="Images/image3.jpg">
-        </div>
-        <div class="right-about  animate__animated animate__backInRight" id="rightabout">
-            <small>about us -----</small>
-            <h1>welcome to restoran</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab voluptatibus beatae facilis, quidem corrupti,
-                iure repudiandae suscipit unde consectetur quas fugit reprehenderit quod itaque, explicabo eum nisi iste
-                vel minima quos autem at? Sit?</p>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem modi repudiandae explicabo
-                ducimus excepturi sequi quo non laboriosam asperiores delectus.</p>
-            <div class="number-display">
-                <div class="eachno">
-                    <i>11</i>
-                    <p>years of</p>
-                    <span>experience</span>
-                </div>
-                <div class="eachno">
-                    <i>36</i>
-                    <p>years of</p>
-                    <span>master's chefs</span>
-                </div>
-            </div>
-            <button>read more</button>
-        </div>
-    </div>
-    <!-- about us ends -->
-    <!-- menu page start -->
-    <div class="menu-container" id="menu">
-        <div class="food-container">
-            <h1>----------food menu----------</h1>
-            <h3 id="title">most popular items</h3>
-            <div class="category" id="category">
-                <div class="item ">
-                    <i class="fa-solid fa-mug-hot"></i>
-                    <span>popular</span>
-                    <p>breakfast</p>
-                </div>
-                <div class="item ">
-                    <i class="fa-solid fa-burger"></i>
-                    <span>popular</span>
-                    <p>lunch</p>
-                </div>
-                <div class="item ">
-                    <i class="fa-solid fa-bowl-rice"></i>
-                    <span>popular</span>
-                    <p>dinner</p>
-                </div>
-            </div>
-        </div>
-        <div class="displaymenu">
-            <div class="flexmenu">
-
-                <div class="menu animate__animated animate__backInLeft">
-                    <img src='Images/c1.jpg'>
-                    <p>chicken burger</p>
-                    <span>Lorem ipsum dolor sit amet consectetur.</span>
-                    <h1>$600</h1>
-
-                </div>
-                <div class="menu animate__animated animate__backInRight">
-                    <img src='Images/c2.jpg'>
-                    <p>chicken nuggets</p>
-                    <span>Lorem ipsum dolor sit amet consectetur.</span>
-                    <h1>$70</h1>
-
-                </div>
-                <div class="menu animate__animated animate__backInLeft">
-                    <img src='Images/c4.jpg'>
-                    <p>chicken cripsy</p>
-                    <span>Lorem ipsum dolor sit amet consectetur.</span>
-                    <h1>$500</h1>
-
-                </div>
-                <div class="menu animate__animated animate__backInRight">
-                    <img src='Images/c5.jpg'>
-                    <p>chicken kabab</p>
-                    <span>Lorem ipsum dolor sit amet consectetur.</span>
-                    <h1>$30</h1>
-
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- menu page  ends -->
     <!-- contact form starts -->
     <div class="contact-container" id="contact">
         <div class="left-contact">
@@ -334,9 +202,9 @@
         let title = document.getElementById('title')
         mode.addEventListener("click", function () {
             document.body.classList.toggle('darktheme');
-            about.style.backgroundColor = 'black';
-            leftabout.style.backgroundColor = 'white';
-            rightabout.style.backgroundColor ='white';
+            about.style.backgroundColor = 'white';
+            leftabout.style.backgroundColor = 'black';
+            rightabout.style.backgroundColor = 'white';
             category.style.backgroundColor = 'white';
             title.style.color = 'white';
 

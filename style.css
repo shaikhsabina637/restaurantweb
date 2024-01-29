@@ -383,7 +383,7 @@ input .lock {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin: 3vw;
+  margin: 6vw;
 }
 
 .card {
@@ -475,7 +475,9 @@ input .lock {
 
 .right-about {
   width: 50%;
-  margin: 2vw;
+  margin: 1vw;
+  padding: 2vw;
+  height: 80vh;
 }
 
 .right-about small {
@@ -595,6 +597,7 @@ input .lock {
 .menu-container {
   height: 83vh;
   width: 100%;
+  padding-top: 6vw;
 }
 
 .food-container {
@@ -744,23 +747,25 @@ input .lock {
 /* menu page ends */
 /* contact us starts */
 .contact-container {
-  height: 75vh;
+  height:90vh;
   width: 100vw;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  padding: 3vw;
 }
 
 .left-contact {
   width: 50%;
-  padding: 3vw;
+  padding: 2vw;
+  margin-top: 4vw;
 }
 
 .right-contact {
   width: 45%;
   background-color: #f3f3f3;
   padding: 3vw;
-  margin: 1vw;
+  margin-top: 4vw;
 }
 
 .right-contact p {
@@ -821,25 +826,29 @@ input .lock {
 
 @media(max-width:700px) {
   .contact-container {
-    height: 130vh;
+    height: 140vh;
   }
 
   .contact-container p {
     font-size: 3vw;
   }
 
-  .contact-container h1 {
+  .contact-container h1{
     font-size: 2.5vw;
   }
 
   .left-contact {
     width: 100vw;
-    height: 70vh;
+    height: 65vh;
+    margin-bottom: 1vw;
+
   }
 
   .right-contact {
     width: 100vw;
-    height: 53vh;
+    height: 55vh;
+    margin-bottom: 5vw;
+  
 
 
   }
@@ -862,10 +871,10 @@ input .lock {
 /* contact us ends */
 /* footer section starts */
 .footer {
-  position: sticky;
   background-color: darkblue;
-  padding: 1vw;
+  padding: 2vw;
   display: flex;
+  width: 100vw;
   flex-wrap: wrap;
   justify-content: space-evenly;
   font-family: 'Cedarville Cursive', cursive;
@@ -907,6 +916,9 @@ input .lock {
   .section i {
     font-size: 1.3vw;
     margin: 0.4vw;
+  }
+  .footer{
+
   }
 
   .section span {

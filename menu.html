@@ -12,9 +12,10 @@
     <link rel="stylesheet" href="style.css">
 
 </head>
+
 <body>
 
-    <div class="container">
+
         <!-- navbar starts -->
         <header>
             <div class="header-container" id="header">
@@ -79,84 +80,7 @@
         </div>
         <!-- singin page ends -->
         <!-- hero sections start -->
-        <div class="hero-section" id="home">
-            <div class="left-hero animate__animated animate__backInLeft ">
-                <span>
-                    enjoy our
-                </span>
-                <span>delicious meal</span>
-                <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione est facere iste laboriosam totam
-                    quas blanditiis tempora, dolores nemo? Quibusdam nam aspernatur perspiciatis suscipit rem qui,
-                    blanditiis placeat possimus! Sint!
-                </p>
-                <button>book a table</button>
-            </div>
-            <div class="right-hero animate__animated animate__backInRight">
-                <img src="Images/marinated-chicken-platter.png" alt="heropng">
-            </div>
-        </div>
-        <!-- hero section ends -->
-    </div>
-    <!-- display-info starts -->
-    <span class="service">-------services------</span>
-    <div class="info-cards" id="service">
-
-        <div class="card animate__animated animate__backInRight ">
-            <i class="fa-solid fa-plate-wheat"></i>
-            <small>master chefs</small>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga, modi.</p>
-        </div>
-        <div class="card animate__animated animate__backInRight animate__delay-1s">
-            <i class="fa-solid fa-spoon"></i>
-            <small>quality food</small>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga, modi.</p>
-        </div>
-        <div class="card animate__animated animate__backInRight animate__delay-2s">
-            <i class="fa-solid fa-cart-shopping"></i>
-            <small>online order</small>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga, modi.</p>
-        </div>
-        <div class="card animate__animated animate__backInRight animate__delay-3s">
-            <i class="fa-solid fa-headset"></i>
-            <small>24/7 services</small>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga, modi.</p>
-        </div>
-    </div>
-    <!-- display-info ends -->
-    <!-- about us starts -->
-    <div class="about-container" id="about">
-        <div class="left-about" id="leftabout">
-            <img src="Images/pool.webp">
-            <img src="Images/room.jpg" class="animate__animated animate__zoomIn ">
-            <img src="Images/room1.avif" class="animate__animated animate__zoomIn ">
-
-            <img src="Images/image3.jpg">
-        </div>
-        <div class="right-about  animate__animated animate__backInRight" id="rightabout">
-            <small>about us -----</small>
-            <h1>welcome to restoran</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab voluptatibus beatae facilis, quidem corrupti,
-                iure repudiandae suscipit unde consectetur quas fugit reprehenderit quod itaque, explicabo eum nisi iste
-                vel minima quos autem at? Sit?</p>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem modi repudiandae explicabo
-                ducimus excepturi sequi quo non laboriosam asperiores delectus.</p>
-            <div class="number-display">
-                <div class="eachno">
-                    <i>11</i>
-                    <p>years of</p>
-                    <span>experience</span>
-                </div>
-                <div class="eachno">
-                    <i>36</i>
-                    <p>years of</p>
-                    <span>master's chefs</span>
-                </div>
-            </div>
-            <button>read more</button>
-        </div>
-    </div>
-    <!-- about us ends -->
+       
     <!-- menu page start -->
     <div class="menu-container" id="menu">
         <div class="food-container">
@@ -211,37 +135,11 @@
                     <h1>$30</h1>
 
                 </div>
-            </div>
+            </div
         </div>
     </div>
     <!-- menu page  ends -->
-    <!-- contact form starts -->
-    <div class="contact-container" id="contact">
-        <div class="left-contact">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.183433400429!2d72.84229817466469!3d19.055670952611447!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c923ce120a5d%3A0x599d689bd33c2303!2sAmber%20Restaurant!5e0!3m2!1sen!2sin!4v1706462886273!5m2!1sen!2sin"
-                width="550" height="340vh" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-        <div class="right-contact animate__animated animate__backInRight">
-            <p>----------reservation---------</p>
-            <h1>book a table online</h1>
-            <form>
-                <input type="text" id='name' placeholder="your name">
-                <input type="email" id='email' placeholder="your email">
-                <input type="date" id='date' placeholder="date and time">
-                <select id='people'>
-                    <option value="1">1 people</option>
-                    <option value="1">2 people</option>
-                    <option value="1">3 people</option>
-                </select>
-                <textarea id="request" placeholder="special request"></textarea>
-                <button id="book">book now</button>
-
-            </form>
-        </div>
-    </div>
-    <!-- contact form ends -->
+   
     <div class="footer" id="footer">
         <div class="section">
             <p>company-----</p>
@@ -334,9 +232,9 @@
         let title = document.getElementById('title')
         mode.addEventListener("click", function () {
             document.body.classList.toggle('darktheme');
-            about.style.backgroundColor = 'black';
-            leftabout.style.backgroundColor = 'white';
-            rightabout.style.backgroundColor ='white';
+            about.style.backgroundColor = 'white';
+            leftabout.style.backgroundColor = 'black';
+            rightabout.style.backgroundColor = 'white';
             category.style.backgroundColor = 'white';
             title.style.color = 'white';
 
