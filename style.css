@@ -1,0 +1,917 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+
+
+body {
+  width: 100%;
+}
+
+.darktheme {
+  background-color: black;
+}
+
+.container {
+  background-image: linear-gradient(rgba(15, 23, 43, 0.9), rgba(15, 23, 43, 0.9)), url(backgroung.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vw;
+  width: 100%;
+}
+
+/* header starts */
+.header-container {
+  z-index: 1000;
+  padding-top: 1vw;
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  background-color: darkblue;
+  width: 100vw;
+  font-family: 'Cedarville Cursive', cursive;
+}
+
+.logo {
+  font-size: 30px;
+  width: 55vw;
+  text-transform: capitalize;
+  font-weight: bold;
+  color: orange;
+  padding-left: 3vw;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50vw;
+}
+
+ul li {
+  list-style: none;
+  text-transform: capitalize;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding: 10px 10px;
+  transition: all 0.5s;
+
+
+}
+
+ul li i {
+  font-size: 2vw;
+  color: white;
+  padding-right: 1vw;
+}
+
+ul li i:hover {
+  color: orange;
+}
+
+ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  color: orange;
+}
+
+ul li a button {
+  padding: 0.1vw;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  color: white;
+  font-size: 1.2vw;
+  cursor: pointer;
+}
+
+ul li a button:hover {
+  color: orange;
+}
+
+.humberger i {
+  font-size: 2rem;
+  padding-right: 20px;
+  display: none;
+
+}
+
+@media(max-width:700px) {
+  .humberger i {
+    display: block;
+    color: orange;
+  }
+
+  ul {
+    position: fixed;
+    top: 60px;
+    left: -1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: orange;
+    width: 100vw;
+    height: 70vh;
+    border-radius: 10px;
+    transition: all 0.5s;
+
+  }
+
+  ul li a:hover {
+    color: black;
+  }
+
+  ul.show {
+    left: 0
+  }
+}
+
+/* hedaer ends */
+/* sigin page starts */
+
+
+.box {
+  background-color: orange;
+  height: 70vh;
+  width: 30%;
+  position: absolute;
+  top: 80px;
+  right: -2000px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  z-index: 400;
+  transition: all 0.6s ease-in;
+}
+
+.right {
+  right: 20px;
+}
+
+.box .title {
+  font-size: 2vw;
+  padding: 1vw;
+  text-transform: capitalize;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 1vw;
+
+}
+
+.box .input-group {
+  margin: 1vw;
+  padding: 1vw;
+  position: relative;
+}
+
+.input-group input {
+  padding: 1vw;
+  width: 105%;
+  border: none;
+  border-bottom: 5px solid orange;
+  position: relative;
+  outline: none;
+  border-radius: 10px;
+}
+
+.input-group label {
+  color: black;
+  text-transform: capitalize;
+  position: absolute;
+  left: 13px;
+  top: -10px;
+
+}
+
+input i {
+  cursor: pointer;
+  position: absolute;
+  right: 10px;
+}
+
+.remember {
+  padding: 0.4vw;
+  text-transform: capitalize;
+  margin-left: 60px;
+}
+
+.remember input {
+  margin: vw;
+  width: 2vw;
+  color: orange;
+}
+
+.remember a {
+  margin-left: 10px;
+}
+
+.button button {
+  padding: 0.5vw;
+  width: 13vw;
+  text-transform: capitalize;
+  background-color: white;
+  border: none;
+  color: orange;
+  font-weight: bold;
+  margin-left: 120px;
+  margin-bottom: 0;
+
+}
+
+input .lock {
+  font-size: 1px;
+}
+
+.register {
+  text-transform: capitalize;
+  margin-left: 6vw;
+  padding: 0.4vw;
+}
+
+.register a {
+  margin-left: 10px
+}
+
+.box i {
+  font-size: 2.5vw;
+  position: absolute;
+  left: 13.5vw;
+  top: 15px;
+}
+@media(max-width:700px){
+  .box{
+    width: 60vw;
+  }
+  .box i{
+    font-size: 7vw;
+    position: absolute;
+    left: 20px;
+  }
+  .box .title{
+    font-size: 6vw;
+  }
+  .input-group input{
+    width: 90%;
+  }
+  .button button{
+    margin-left: 22vw;
+    margin-top: 3vw;
+    margin-bottom: 2vw;
+    
+  }
+}
+
+
+
+
+/* sign in page ends */
+/* hero-sections starts */
+.hero-section {
+  width: 100%;
+  /* height: 41vw; */
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.left-hero {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 4vw;
+  /* background-color: blue; */
+
+
+}
+
+.left-hero span {
+  text-transform: capitalize;
+  font-size: 5vw;
+  color: white;
+  font-weight: bold;
+  font-family: 'Cedarville Cursive', cursive;
+
+}
+
+.left-hero p {
+  color: white;
+  font-family: 'Cedarville Cursive', cursive;
+  text-transform: capitalize;
+
+}
+
+.left-hero button {
+  width: 30%;
+  margin-top: 2vw;
+  border: none;
+  text-transform: capitalize;
+  background-color: orange;
+  outline: none;
+  padding: 0.5vw;
+  border-radius: 0.5vw;
+  color: white;
+}
+
+.right-hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: red; */
+  width: 40%;
+  padding-top: 4vw;
+}
+
+.right-hero img {
+  padding-top: 1vw;
+  object-fit: cover;
+  object-position: center;
+  width: 35vw;
+  animation: rotateimg 50s linear infinite;
+
+}
+
+@keyframes rotateimg {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media(max-width:700px) {
+  .left-hero {
+    width: 100%;
+  }
+
+  .right-hero img {
+    display: none;
+  }
+
+  .hero-section {
+    padding-top: 30px;
+    height: 10vh;
+  }
+}
+
+/* hero-sections ends */
+/* display-info card starts */
+.service {
+  font-size: 2.5vw;
+  padding: 2vw;
+  font-weight: bold;
+  margin-left: 35vw;
+  color: orange;
+  text-transform: capitalize;
+  font-family: 'Cedarville Cursive', cursive;
+  ;
+}
+
+.info-cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 3vw;
+}
+
+.card {
+  background-color: #f3f3f3;
+  box-shadow: 0px 0px 0px 5px white;
+  width: 20vw;
+  padding: 2.5vw;
+  border-radius: 10px;
+  text-transform: capitalize;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.card i {
+  font-size: 2vw;
+  color: orange;
+  padding: 0.2vw;
+}
+
+.card small {
+  font-weight: bold;
+  padding: 0.2vw;
+  font-size: 1.7vw;
+  display: block;
+}
+
+.card:hover {
+  background-color: orange;
+  transform: translate(4px);
+}
+
+@media(max-width:700px) {
+  .info-cards {
+    display: flex;
+
+  }
+
+  .card i {
+    font-size: 4vw;
+  }
+
+  .card {
+    width: 40vw;
+    margin-bottom: 3vw;
+  }
+}
+
+/* display-info card ends */
+/* about page start */
+.about-container {
+  display: flex;
+  justify-content: space-evenly;
+  height: 40vw;
+  width: 100%;
+  padding: 2vw;
+  margin: vw;
+}
+
+.left-about {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 45%;
+  padding: 1vw;
+  margin-top: 2vw;
+  /* background-color: aqua; */
+
+}
+
+.left-about img {
+  width: 20vw;
+  height: 33vh;
+  margin-right: 1vw;
+  margin-bottom: 1vw;
+  /* border-radius: 10px; */
+}
+
+.left-about img:nth-of-type(2) {
+  width: 13vw;
+  height: 27vh;
+}
+
+.left-about img:nth-of-type(3) {
+  width: 13vw;
+  height: 27vh;
+}
+
+.right-about {
+  width: 50%;
+  margin: 2vw;
+}
+
+.right-about small {
+  text-transform: capitalize;
+  font-weight: bold;
+  color: orange;
+  font-size: 2vw;
+  font-family: 'Cedarville Cursive', cursive;
+
+}
+
+.right-about h1 {
+  text-transform: capitalize;
+  font-weight: bold;
+  font-family: 'Cedarville Cursive', cursive;
+}
+
+.right-about p {
+  text-transform: capitalize;
+  width: 35vw;
+  margin-bottom: 3vw;
+}
+
+.number-display {
+  display: flex;
+  justify-content: space-between;
+  width: 40vw;
+}
+
+.eachno {
+  margin-left: 2px;
+  width: 20vw;
+  padding: 1vw;
+  border-left: 6px solid orange;
+  background-color: #f3f3f3;
+  transition: all 0.5s linear;
+  cursor: pointer;
+}
+
+.eachno:hover {
+  transform: translate(5px);
+}
+
+.eachno i {
+  color: orange;
+  font-size: 2vw;
+}
+
+.eachno p {
+  margin: 0;
+  padding: 0;
+  color: grey;
+}
+
+.eachno span {
+  font-weight: bold;
+}
+
+.right-about button {
+  margin-top: 1vw;
+  padding: 0.5vw;
+  background-color: orange;
+  text-transform: capitalize;
+  border: none;
+  border-radius: 3px;
+  color: white;
+
+}
+
+.right-about button:hover {
+  background-color: white;
+  color: orange;
+}
+
+@media(max-width:700px) {
+  .about-container {
+    height: 75vh;
+  }
+
+  .left-about {
+    display: none;
+  }
+
+  .right-about {
+    padding: 2vw;
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+  }
+
+  .right-about small {
+    font-size: 5vw;
+    padding: 1vw;
+
+  }
+
+  .right-about p {
+    width: 100%;
+  }
+
+  .right-about button {
+    width: 20%;
+    margin-top: 2vw;
+  }
+
+  .right-about .eachno {
+    width: 15vw;
+    margin-right: 2vw;
+  }
+}
+
+/* about page ends */
+/* menu page start */
+.menu-container {
+  height: 83vh;
+  width: 100%;
+}
+
+.food-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.food-container h1 {
+  font-size: 2vw;
+  text-transform: capitalize;
+  color: orange;
+  margin-bottom: 0.2vw;
+  font-family: 'Cedarville Cursive', cursive;
+}
+
+.food-container h3 {
+  font-size: 3vw;
+  text-transform: capitalize;
+  font-weight: bold;
+  font-family: 'Cedarville Cursive', cursive;
+}
+
+.category {
+  display: flex;
+  padding: 1vw;
+  margin: 0.3vw;
+
+}
+
+.category .item {
+  padding: 0.5vw;
+  margin: 0.5vw;
+  border-left: 4px solid orange;
+  width: 7vw;
+}
+
+.item i {
+  display: block;
+  color: orange;
+  font-size: 2vw;
+  margin-left: 1.5vw;
+}
+
+.item span {
+  text-transform: capitalize;
+  color: grey;
+  margin: 0.7vw;
+  padding-bottom: 1vw;
+}
+
+.item p {
+  text-transform: capitalize;
+  font-weight: bold;
+  text-align: center;
+}
+
+.displaymenu {
+  width: 100%;
+  padding: 2vw;
+}
+
+.flexmenu {
+  padding: 1vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.flexmenu .menu {
+  display: flex;
+  width: 35vw;
+  background-color: #f3f3f3;
+  height: 17vh;
+  padding: 1vw;
+  position: relative;
+  border-radius: 10px;
+  margin-bottom: 2vw;
+  transition: all 0.5s linear;
+  cursor: pointer;
+}
+
+.flexmenu .menu:hover {
+  transform: translate(3px);
+}
+
+.menu p {
+  width: 100%;
+  margin: 1vw;
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 2vw;
+  font-family: 'Cedarville Cursive', cursive;
+}
+
+.menu img {
+  width: 7vw;
+}
+
+.menu span {
+  position: absolute;
+  top: 52px;
+  left: 110px;
+  font-family: 'Cedarville Cursive', cursive;
+}
+
+.menu h1 {
+  color: orange;
+  margin-top: 10px;
+  font-size: 2vw;
+  font-family: 'Cedarville Cursive', cursive;
+}
+
+@media(max-width:700px) {
+  .food-container {
+    display: none;
+  }
+
+  .flexmenu {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .flexmenu .menu {
+    width: 100vw;
+  }
+
+  .menu img {
+    width: 30vw;
+  }
+
+  .menu span {
+    left: 25vw;
+  }
+
+  .menu p {
+    font-size: 3.5vw;
+    margin-left: 4vw;
+  }
+
+  .menu h1 {
+    font-size: 4.2vw;
+  }
+}
+
+/* menu page ends */
+/* contact us starts */
+.contact-container {
+  height: 75vh;
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.left-contact {
+  width: 50%;
+  padding: 3vw;
+}
+
+.right-contact {
+  width: 45%;
+  background-color: #f3f3f3;
+  padding: 3vw;
+  margin: 1vw;
+}
+
+.right-contact p {
+  text-transform: capitalize;
+  color: orange;
+  font-weight: bold;
+  font-size: 1.9vw;
+  font-family: 'Cedarville Cursive', cursive;
+}
+
+.right-contact h1 {
+  text-transform: capitalize;
+  font-size: 2vw;
+  margin-top: 1vw;
+  font-family: 'Cedarville Cursive', cursive;
+}
+
+.right-contact form {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: 'Cedarville Cursive', cursive;
+}
+
+.right-contact input {
+  width: 40%;
+  margin: 1vw;
+  padding: 0.5vw;
+  text-transform: capitalize;
+  outline: none;
+}
+
+.right-contact select {
+  height: 2.6vw;
+  width: 40%;
+  margin-top: 1vw;
+  margin-left: 1vw;
+}
+
+.contact-container textarea {
+  text-transform: capitalize;
+  padding: 0.5vw;
+  resize: none;
+  margin: 1vw;
+  height: 7vw;
+  width: 86%;
+  display: block;
+}
+
+.contact-container button {
+  padding: 0.5vw;
+  text-transform: capitalize;
+  background-color: orange;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  margin-left: 1vw;
+}
+
+@media(max-width:700px) {
+  .contact-container {
+    height: 130vh;
+  }
+
+  .contact-container p {
+    font-size: 3vw;
+  }
+
+  .contact-container h1 {
+    font-size: 2.5vw;
+  }
+
+  .left-contact {
+    width: 100vw;
+    height: 70vh;
+  }
+
+  .right-contact {
+    width: 100vw;
+    height: 53vh;
+
+
+  }
+
+  .right-contact input {
+    width: 100%;
+    margin-bottom: 0.5vw;
+  }
+
+  .contact-container select {
+    width: 98%;
+    height: 5vh;
+  }
+
+  .contact-container textarea {
+    width: 100%;
+  }
+}
+
+/* contact us ends */
+/* footer section starts */
+.footer {
+  position: sticky;
+  background-color: darkblue;
+  padding: 1vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  font-family: 'Cedarville Cursive', cursive;
+
+}
+
+.section {
+  margin-right: 2vw;
+  width: 27vw;
+  padding: 1vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.section p {
+  color: orange;
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 2vw;
+  margin: 0.3vw;
+}
+
+.section i {
+  color: white;
+  text-transform: capitalize;
+  font-size: 1vw;
+  margin: 0.3vw;
+  letter-spacing: 2px;
+}
+
+.section span {
+  color: white;
+  text-transform: uppercase;
+  margin: 0.2vw;
+  font-weight: bold;
+}
+
+@media(max-width:700px) {
+  .section i {
+    font-size: 1.3vw;
+    margin: 0.4vw;
+  }
+
+  .section span {
+    font-size: 1.3vw;
+  }
+}
+
+/* footer section ends */

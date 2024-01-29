@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>service</title>
+    <link rel="stylesheet" href="service.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="header.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-container" id="header">
+            <div class="logo animate__animated animate__pulse">restoran</div>
+            <div class="list">
+                <ul>
+                    <li><a id='reloadhome' href="index.html">home</a></li>
+                    <li><a href="pages/about.html">about</a></li>
+                    <li><a href="pages/service.html">service</a></li>
+                    <li><a href="pages/menu.html">menu</a></li>
+                    <li><a href="pages/contact.html">contact</a></li>
+                    <li onclick="active()"><a href="#">logIn</a></li>
+                    <li><a href="#">signIn</a></li>
+                    <li><i class="fa-solid fa-moon" id="mode"></i></li>
+                </ul>
+            </div>
+            <div class="menu">
+                <div class="humberger" onclick="myfunc()">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+
+            </div>
+
+    </header>
+
+    <span class="service">-------services------</span>
+    <div class="info-cards" id="service">
+
+        <div class="card animate__animated animate__backInRight ">
+            <i class="fa-solid fa-plate-wheat"></i>
+            <small>master chefs</small>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga, modi.</p>
+        </div>
+        <div class="card animate__animated animate__backInRight animate__delay-1s">
+            <i class="fa-solid fa-spoon"></i>
+            <small>quality food</small>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga, modi.</p>
+        </div>
+        <div class="card animate__animated animate__backInRight animate__delay-2s">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <small>online order</small>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga, modi.</p>
+        </div>
+        <div class="card animate__animated animate__backInRight animate__delay-3s">
+            <i class="fa-solid fa-headset"></i>
+            <small>24/7 services</small>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga, modi.</p>
+        </div>
+    </div>
+    <script>
+         let boxing = document.getElementById('boxing');
+        function active() {
+            boxing.classList.add('right')
+        }
+        let wrong = document.getElementById('wrong');
+        wrong.addEventListener("click", function () {
+            boxing.classList.remove('right')
+        })
+        let submit = document.getElementById('submit');
+        let username = document.getElementById('username');
+        let password = document.getElementById('password')
+        submit.addEventListener('click', function (e) {
+            e.preventDefault()
+            if (username.value === '' && password.value === '') {
+                alert('please enter the username and password')
+            } else if (username.value.length <= 3) {
+                alert('username should be more than 5 letter')
+            } else if (password.value.length <= 8) {
+                alert('password length should be more than 8 ')
+            } else {
+                alert('thank you! you are now logged in')
+            }
+        });
+    </script>
+</body>
+
+</html>

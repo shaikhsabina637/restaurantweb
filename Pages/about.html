@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body>
+
+    <header class="header-container" id="header">
+        <div class="logo animate__animated animate__pulse">restoran</div>
+        <div class="list">
+            <ul>
+                <li><a id='reloadhome' href="index.html">home</a></li>
+                <li><a href="pages/about.html">about</a></li>
+                <li><a href="pages/service.html">service</a></li>
+                <li><a href="pages/menu.html">menu</a></li>
+                <li><a href="pages/contact.html">contact</a></li>
+                <li onclick="active()"><a href="#">logIn</a></li>
+                <li><a href="#">signIn</a></li>
+                <li><i class="fa-solid fa-moon" id="mode"></i></li>
+            </ul>
+        </div>
+        <div class="menu">
+            <div class="humberger" onclick="myfunc()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+        </div>
+    </header>
+    <div class="about-container" id="about">
+        <div class="left-about" id="leftabout">
+            <img src="pool.webp">
+            <img src="room.jpg" class="animate__animated animate__zoomIn ">
+            <img src="room1.avif" class="animate__animated animate__zoomIn ">
+
+            <img src="image3.jpg">
+        </div>
+        <div class="right-about  animate__animated animate__backInRight" id="rightabout">
+            <small>about us -----</small>
+            <h1>welcome to restoran</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab voluptatibus beatae facilis, quidem corrupti,
+                iure repudiandae suscipit unde consectetur quas fugit reprehenderit quod itaque, explicabo eum nisi iste
+                vel minima quos autem at? Sit?</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem modi repudiandae explicabo
+                ducimus excepturi sequi quo non laboriosam asperiores delectus.</p>
+            <div class="number-display">
+                <div class="eachno">
+                    <i>11</i>
+                    <p>years of</p>
+                    <span>experience</span>
+                </div>
+                <div class="eachno">
+                    <i>36</i>
+                    <p>years of</p>
+                    <span>master's chefs</span>
+                </div>
+            </div>
+            <button>read more</button>
+        </div>
+    </div>
+    <script>
+         let boxing = document.getElementById('boxing');
+        function active() {
+            boxing.classList.add('right')
+        }
+        let wrong = document.getElementById('wrong');
+        wrong.addEventListener("click", function () {
+            boxing.classList.remove('right')
+        })
+        let submit = document.getElementById('submit');
+        let username = document.getElementById('username');
+        let password = document.getElementById('password')
+        submit.addEventListener('click', function (e) {
+            e.preventDefault()
+            if (username.value === '' && password.value === '') {
+                alert('please enter the username and password')
+            } else if (username.value.length <= 3) {
+                alert('username should be more than 5 letter')
+            } else if (password.value.length <= 8) {
+                alert('password length should be more than 8 ')
+            } else {
+                alert('thank you! you are now logged in')
+            }
+        });
+    </script>
+</body>
+
+</html>
