@@ -1,5 +1,7 @@
  🍽️ Restaurant Website
+ 
  Live Preview - https://restorant-static-web.netlify.app/
+
 A fully responsive Restaurant Website built using **HTML, CSS, and JavaScript. The design adapts seamlessly across all devices and includes modern features such as:
 
 * 🌙 Dark Mode Toggle
